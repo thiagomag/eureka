@@ -16,6 +16,11 @@ ext {
     set('springCloudVersion', "2020.0.3")
 }
 
+bootJar {
+    archiveBaseName = 'eureka'
+    archiveVersion = '0.0.1'
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
